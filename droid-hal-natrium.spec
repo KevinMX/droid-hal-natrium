@@ -11,6 +11,18 @@
 
 %define droid_target_aarch64 1
 
+%define straggler_files \
+   /bugreports \
+   /d \
+   /file_contexts.bin \
+   /init.qcom.sh \
+   /property_contexts \
+   /sdcard \
+   /selinux_version \
+   /service_contexts \
+   /vendor \
+%{nil}
+
 %include rpm/dhd/droid-hal-device.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
